@@ -13,29 +13,56 @@
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous"
     />
-
+    <!-- adding fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-      <h1 class="text-center m-2">Random color pallete Generator</h1>
-      <div class="container p-4">
-      <div class="row">
-          <div class="col col-3 shadow abg">
-d
+  <body><div class="container">
+    <h1 class="text-center p-2">Random color pallete Generator</h1>
+    
+      <div class="palette-container p-5">
+        <div class="shadow color-card">
+          <div class="color">
+            <i tooltip="copy" class="far fa-2x fa-copy"></i>
           </div>
-          <div class="col col-3  b-bg">
-d
-          </div>
-          <div class="col col-3 c-bg">
-dd
-          </div>
-          <div class="col col-3 d-bg">
-dd
-          </div>
-      </div>
-      <button class="btn btn-lg btn-dark text-center ml-auto">Generate Color </button>
-    </div>
+          <p></p>
+        </div>
 
+        <div class="shadow color-card">
+          <div class="color">
+            <i tooltip="copy" class="far fa-2x fa-copy"></i>
+          </div>
+          <p></p>
+        </div>
+
+        <div class="shadow color-card">
+          <div class="color">
+            <i tooltip="copy" class="far fa-2x fa-copy"></i>
+          </div>
+          <p></p>
+        </div>
+
+        <div class="shadow color-card">
+          <div class="color">
+            <i tooltip="copy" class="far fa-2x fa-copy"></i>
+          </div>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="generate-container">
+        <button class="btn btn-lg btn-dark text-center" id="generate">
+          Generate Color
+        </button>
+    
+      </div>
+      <p class="generate-container" >Or just press the spacebar to generate new palettes</p>
+    </div>
   </body>
-  
+
   <script src="./index.js"></script>
 </html>

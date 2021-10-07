@@ -1,25 +1,76 @@
-.abg{
-    background-color: yellow;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Dancing+Script:wght@600&display=swap');
 
-    .b-bg{
-        background-color: yellow;
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        }
-        .c-bg{
-            background-color: yellow;
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-            }
-            .d-bg{
-                background-color: yellow;
-                border-radius: 50%;
-                height: 150px;
-                width: 150px;
-                }
+html,.container,body{
+    background-color: #93B5C6 !important;
+   
+
+}
+h1{
+
+    font-family: 'Dancing Script', cursive;
+        font-size: 5rem !important;
+    color: #4B3869 !important;
+}
+
+.palette-container {
+    padding:1rem;
+    margin-top:2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:1.2rem;
+}
+.color-card {
+    padding:1rem;
+    background-color: #ffffff;
+    border-radius: 10%;
+    height: 300px;
+    transition:ease-out 0.3s;
+    
+}
+.color-card:hover {
+    transform: scale(1.03);
+}
+.color {
+    width:100%;
+    height:90%;
+    position:relative;
+   
+}
+.far{
+    cursor: pointer;
+}
+.generate-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+@media only screen and (max-width:850px) {
+    .color-card {
+        height:300px;
+    }
+    
+}
+
+@media only screen and (max-width:750px) {
+     h1 {
+        font-size: 1.4rem;
+    }
+   .palette-container {
+       margin-top: 1rem;
+       grid-template-columns: repeat(2,1fr);
+       justify-items: center;
+   }
+   .color-card {
+         width: 100%;
+         height:200px;
+}
+}
