@@ -49,6 +49,26 @@ h1{
     position: relative;
     font-family: 'Dancing Script', cursive;
 }
+.popup {
+    background: #7B4B94;
+    width: 50%;
+    margin: 0 auto;
+    padding:0.8rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    transform: translateY(-120%);
+    transition:ease-out 0.3s;
+    text-align: center;
+}
+.fa-times {
+    position:absolute;
+    top: 5px;
+    right:5px;
+    cursor: pointer; 
+}
 
 
 

@@ -60,6 +60,36 @@ h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+.popup {
+  background: #7B4B94;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 850px) {
   .color-card {
     height: 300px;
