@@ -19,3 +19,14 @@ const showPopup = (popup,colorText) => {
     popup.style.backgroundColor = colorText;
     popup.children[1].innerText = `Color ${colorText} copied to your clipboard`;
 }
+
+const copyHex = (colorText) => {
+    let tempText = document.createElement("input");
+    tempText.value = colorText;
+    document.body.appendChild(tempText);
+    tempText.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempText);
+    showPopup(popup,colorText)
+}
+
