@@ -13,3 +13,9 @@ const generateRandomHexColor = () => {
     };
     return color;
 }
+
+const showPopup = (popup,colorText) => {
+    popup.style.transform = "translateY(0%)"
+    popup.style.backgroundColor = colorText;
+    popup.children[1].innerText = `Color ${colorText} copied to your clipboard`;
+}
