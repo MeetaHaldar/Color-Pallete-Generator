@@ -41,3 +41,15 @@ const setColors = (cards) => {
         copyIcon.addEventListener("click",(e) => copyHex(color))
     })
 }
+setColors(colorCards);
+
+generateBtn.addEventListener("click",() => setColors(colorCards));
+window.addEventListener("keypress",(e) => {
+    if(e.key === " ") {
+        setColors(colorCards);
+    }
+})
+closePopup.addEventListener("click",(e) => {
+   const parentNode = e.target.parentNode;
+   parentNode.style.transform = "translateY(-110%)"
+})
