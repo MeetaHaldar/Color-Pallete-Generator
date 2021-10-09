@@ -21,7 +21,7 @@ h1{
     grid-gap:1.2rem;
 }
 .color-card {
-    padding:1rem;
+    padding:0.4rem;
     background-color: #ffffff;
     border-radius: 1%;
     height: 300px;
@@ -69,7 +69,17 @@ h1{
     right:5px;
     cursor: pointer; 
 }
-
+.fa-copy {
+    position:absolute;
+    right:10px;
+    top:10px;
+    opacity:0.5;
+    cursor: pointer;
+    transition:ease-out 0.2s;
+}
+.fa-copy:hover {
+    opacity: 1;
+}
 
 
 
