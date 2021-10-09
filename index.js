@@ -30,3 +30,14 @@ const copyHex = (colorText) => {
     showPopup(popup,colorText)
 }
 
+const setColors = (cards) => {
+    cards.forEach((card,inex) => {
+        const cardDiv = card.children[0];
+        const copyIcon = cardDiv.children[0];
+        let color = generateRandomHexColor();
+        cardDiv.style.backgroundColor = color;
+        const cardPara = card.children[1];
+        cardPara.innerText = color;
+        copyIcon.addEventListener("click",(e) => copyHex(color))
+    })
+}
